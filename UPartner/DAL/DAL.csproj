@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3E528411-436E-4969-AE80-B8BC1C0536C0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DAL</RootNamespace>
+    <AssemblyName>DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAO.cs" />
+    <Compile Include="DAO\ModeloDAO\AdministradorDAO.cs" />
+    <Compile Include="DAO\ModeloDAO\AtuacaoDAO.cs" />
+    <Compile Include="DAO\ModeloDAO\CadastroAtuacaoDAO.cs" />
+    <Compile Include="DAO\ModeloDAO\DenunciaDAO.cs" />
+    <Compile Include="DAO\ModeloDAO\EventoDAO.cs" />
+    <Compile Include="DAO\ModeloDAO\EventoFocoDAO.cs" />
+    <Compile Include="DAO\ModeloDAO\FotoEventoDAO.cs" />
+    <Compile Include="DAO\ModeloDAO\FotoPublicacaoDAO.cs" />
+    <Compile Include="DAO\ModeloDAO\MensagemDAO.cs" />
+    <Compile Include="DAO\ModeloDAO\ParticipanteDAO.cs" />
+    <Compile Include="DAO\ModeloDAO\PublicacaoDAO.cs" />
+    <Compile Include="DAO\ModeloDAO\PublicacaoFocoDAO.cs" />
+    <Compile Include="DAO\ModeloDAO\TipoContaDAO.cs" />
+    <Compile Include="DAO\ModeloDAO\TipoDenunciaDAO.cs" />
+    <Compile Include="DAO\ModeloDAO\TipoEventoDAO.cs" />
+    <Compile Include="DAO\ModeloDAO\UsuarioAtuacaoDAO.cs" />
+    <Compile Include="DAO\ModeloDAO\UsuarioDAO.cs" />
+    <Compile Include="DAO\StoreProcedureDAO\Sp_EventosDAO.cs" />
+    <Compile Include="DAO\StoreProcedureDAO\Sp_PublicacoesDAO.cs" />
+    <Compile Include="DAO\VisaoDAO\V_AtuacoesUsuarioDAO.cs" />
+    <Compile Include="DAO\VisaoDAO\V_CadastroAtuacaoDAO.cs" />
+    <Compile Include="DAO\VisaoDAO\V_EventosDAO.cs" />
+    <Compile Include="DAO\VisaoDAO\V_EventosFocoDAO.cs" />
+    <Compile Include="DAO\VisaoDAO\V_PublicacoesDAO.cs" />
+    <Compile Include="DAO\VisaoDAO\V_PublicacoesDenunciadasDAO.cs" />
+    <Compile Include="DAO\VisaoDAO\V_PublicacoesFocoDAO.cs" />
+    <Compile Include="DAO\VisaoDAO\V_UsuarioDenunciadosDAO.cs" />
+    <Compile Include="DAO\VisaoDAO\V_UsuariosBloqueadosDAO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepositorioModelo.cs" />
+    <Compile Include="RepositorioProcedure.cs" />
+    <Compile Include="RepositorioVisao.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{1E35B0AE-1251-4F5C-AF05-81005D82B3D4}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilitarios\Utilitarios.csproj">
+      <Project>{55A06D1B-6F09-421A-A454-0D0D6B385977}</Project>
+      <Name>Utilitarios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

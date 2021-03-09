@@ -1,0 +1,132 @@
+﻿body {
+}
+
+#div_perfil {
+    border: groove;
+    width: 80%;
+    height: 500px;
+    position: relative;
+    top: 100px;
+    left: 10%;
+}
+
+#div_header_perfil {
+    height: 34%;
+    background-color: #000521;
+}
+
+#div_body_perfil {
+    border-top: groove;
+    position: relative;
+    top: 35%;
+}
+
+#div_publicacao {
+    position: relative;
+    top: 100px;
+    width: 510px;
+    height: 200px;
+}
+
+.Circulo {
+    position: relative;
+    top: 50px;
+    left: 27%;
+    border: groove;
+    border-color: #000000;
+    border-radius: 100%;
+    background-color: #ffffff;
+    height: 160px;
+    width: 160px;
+}
+
+#upload-file {
+    display: none; 
+}
+
+#foto_perfil_home {
+    position: relative;
+    top: 30px;
+    left: 31px;
+    font-size: 90px;
+    color: #000000;
+}
+
+#btn_Foto {
+    width: 143px;
+    height: 44px;
+    position: relative;
+    top: 7px;
+    background-color: #CCCCCC;
+}
+
+#btn_video {
+    width: 143px;
+    height: 44px;
+    position: relative;
+    top: 7px;
+    background-color: #CCCCCC;
+}
+
+#btn_arquivo {
+    width: 143px;
+    height: 44px;
+    position: relative;
+    top: 7px;
+    background-color: #CCCCCC;
+}
+
+#btn_compartilhar {
+    position: relative;
+    width: 143px;
+    height: 44px;
+    position: relative;
+    left: 69%;
+    top: 25px;
+}
+/*-------> LABEL <-----*/
+#lblTipo {
+    position: relative;
+    left: 20%;
+    top: 7px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#lblNome {
+    position: relative;
+    left: 37%;
+    top: 45px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#lbl_foto {
+    position: relative;
+    top: -15px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#lbl_video {
+    position: relative;
+    top: -15px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#lbl_arquivo {
+    position: relative;
+    top: -50px;
+    left: 14%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#txtPublicacao {
+    position: relative;
+    left: 2%;
+    height: 80px;
+    width: 486px;
+    max-width: 490px;
+}

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1E35B0AE-1251-4F5C-AF05-81005D82B3D4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DTO</RootNamespace>
+    <AssemblyName>DTO</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Modelos\Administrador.cs" />
+    <Compile Include="Modelos\Atuacao.cs" />
+    <Compile Include="Modelos\CadastroAtuacao.cs" />
+    <Compile Include="Modelos\Denuncia.cs" />
+    <Compile Include="Modelos\Evento.cs" />
+    <Compile Include="Modelos\EventoFoco.cs" />
+    <Compile Include="Modelos\FotoEvento.cs" />
+    <Compile Include="Modelos\FotoPublicacao.cs" />
+    <Compile Include="Modelos\Participante.cs" />
+    <Compile Include="Modelos\Publicacao.cs" />
+    <Compile Include="Modelos\PublicacaoFoco.cs" />
+    <Compile Include="Modelos\StatusEvento.cs" />
+    <Compile Include="Modelos\TipoConta.cs" />
+    <Compile Include="Modelos\TipoDenuncia.cs" />
+    <Compile Include="Modelos\TipoEvento.cs" />
+    <Compile Include="Modelos\Usuario.cs" />
+    <Compile Include="Modelos\UsuarioAtuacao.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StoreProcedure\Sp_Eventos.cs" />
+    <Compile Include="StoreProcedure\Sp_Publicacoes.cs" />
+    <Compile Include="Visao\V_AtuacoesUsuario.cs" />
+    <Compile Include="Visao\V_CadastroAtuacao.cs" />
+    <Compile Include="Visao\V_Eventos.cs" />
+    <Compile Include="Visao\V_EventosFoco.cs" />
+    <Compile Include="Visao\V_Publicacoes.cs" />
+    <Compile Include="Visao\V_PublicacoesDenunciadas.cs" />
+    <Compile Include="Visao\V_PublicacoesFoco.cs" />
+    <Compile Include="Visao\V_UsuarioDenunciados.cs" />
+    <Compile Include="Visao\V_UsuariosBloqueados.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

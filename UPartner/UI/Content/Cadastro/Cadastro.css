@@ -1,0 +1,194 @@
+﻿#card-Principal {
+    position: relative;
+    top: 50px;
+    left: 20%;
+    width: 60%
+}
+
+#lblPolitica {
+    font-size: 40px;
+    font: bold;
+    position: relative;
+    left: 26%;
+}
+
+#cbxPolitica {
+    position: relative;
+    top: 50px;
+    width: 100%;
+}
+
+#btnProximoPessoais {
+    -webkit-transition-duration: 0.4s !important; /* Safari */
+    transition-duration: 0.4s !important;
+    background-color: #ffffff;
+    border-color: #000521;
+    color: #000521;
+    width: 10%;
+}
+
+    #btnProximoPessoais:hover {
+        background-color: #00b03b !important;
+        color: #ffffff !important;
+        border-color: #00b03b !important;
+    }
+
+#btnProximoEndereco {
+    -webkit-transition-duration: 0.4s !important; /* Safari */
+    transition-duration: 0.4s !important;
+    background-color: #ffffff;
+    border-color: #000521;
+    color: #000521;
+    width: 10%;
+}
+
+    #btnProximoEndereco:hover {
+        background-color: #00b03b !important;
+        color: #ffffff !important;
+        border-color: #00b03b !important;
+    }
+
+#btnRetornarPessoais {
+    -webkit-transition-duration: 0.4s !important; /* Safari */
+    transition-duration: 0.4s !important;
+    background-color: #ffffff;
+    border-color: #000521;
+    color: #000521;
+    width: 10%;
+}
+
+    #btnRetornarPessoais:hover {
+        background-color: #b00000 !important;
+        color: #ffffff !important;
+        border-color: #b00000 !important;
+    }
+
+#btnRetornarConta {
+    -webkit-transition-duration: 0.4s !important; /* Safari */
+    transition-duration: 0.4s !important;
+    background-color: #ffffff;
+    border-color: #000521;
+    color: #000521;
+    width: 10%;
+}
+
+    #btnRetornarConta:hover {
+        background-color: #b00000 !important;
+        color: #ffffff !important;
+        border-color: #b00000 !important;
+    }
+
+#lblConcordo {
+    position: relative;
+    top: 50px;
+    right: 5%;
+    width: 100%;
+}
+
+#formPolitica {
+    position: relative;
+    left: 10%;
+}
+
+#txtPolitica {
+    font-size: 12px;
+    position: relative;
+    top: 50px;
+    left: 10%;
+    max-width: 700px;
+    width: 100%;
+}
+
+#Conteudo-Cadastro {
+    height: 800px;
+}
+
+#btnPolitica {
+    position: relative;
+    top: 100px;
+    left: 34%;
+}
+
+#btn_Continuar {
+    position: relative;
+    right: 15%;
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: #000521;
+}
+
+#btn_Voltar {
+    position: relative;
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: #000521;
+}
+
+#lblConta {
+    font-size: 40px;
+    font: bold;
+    position: relative;
+    left: 22%;
+}
+
+#lblEmpreendedor {
+    position: relative;
+    right: 15%;
+}
+
+#lblEmpresa {
+    position: relative;
+    right: 15%;
+}
+
+.form-control {
+    max-width: 100%;
+}
+
+#form_Cadastro {
+    position: relative;
+    top: 100px;
+}
+
+#btn_Salvar {
+    position: relative;
+    right: 15%;
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: #000521;
+}
+
+#btn_Avancar {
+    position: relative;
+    right: 15%;
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: #000521;
+}
+
+#btnEtapa2 {
+    position: relative;
+    top: 200px;
+    left: 34%;
+}
+
+#form_Cadastro_etapa_3 {
+    position: relative;
+    top: 100px;
+}
+
+hr {
+    border-width: 4px;
+}
+
+.hidden {
+    display: none;
+}
+
+#ContentPlaceHolder1_gridConvidados {
+    width: 100%;
+}

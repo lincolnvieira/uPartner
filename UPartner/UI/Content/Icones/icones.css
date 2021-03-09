@@ -1,0 +1,109 @@
+﻿/* fallback */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v47/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+#home {
+    position: relative;
+    right: 180%;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+#evento {
+    position: relative;
+    right: 170%;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+#solicitacao {
+    position: relative;
+    right: 165%;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+#mensagem {
+    position: relative;
+    right: 145%;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+#notificacao {
+    position: relative;
+    right: 125%;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+#perfil {
+    position: relative;
+    right: 110%;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+#configuracao {
+    position: relative;
+    left: 50%;
+    top: -190%;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+#menu_perfil {
+    position: relative;
+    right: 60%;
+    top: -70%;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+#pesquisa {
+    position: relative;
+    left: 95%;
+    top: -30px;
+    color: #808080;
+}
+
+#icon-foto {
+    position: relative;
+    right: 15px;
+    top: -4px;
+    font-size: 40px;
+}
+
+#icon-video {
+    position: relative;
+    right: 10px;
+    top: -4px;
+    font-size: 40px;
+}
+
+#icon-arquivo {
+    position: relative;
+    right: 48px;
+    top: -4px;
+    font-size: 40px;
+}

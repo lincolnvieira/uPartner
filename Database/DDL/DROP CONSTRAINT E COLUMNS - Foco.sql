@@ -1,0 +1,9 @@
+
+ALTER TABLE Publicacao DROP CONSTRAINT FK_Publicacao_Atuacao_ID;  
+ALTER TABLE Publicacao DROP COLUMN Foco;
+
+ALTER TABLE Usuario DROP CONSTRAINT FK_Usuario_Atuacao;  
+ALTER TABLE Usuario DROP COLUMN mAtuacao;
+
+ALTER TABLE Usuario DROP CONSTRAINT FK_Evento_Atuacao_ID;
+ALTER TABLE Evento DROP COLUMN Foco;
